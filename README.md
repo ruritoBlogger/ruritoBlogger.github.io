@@ -1,1 +1,5 @@
-# ruritoBlogger.github.io
+## これは何
+
+portfolio です
+
+カスタムドメインの設定が終わったらデプロイ先も貼ります
