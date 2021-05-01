@@ -1,0 +1,4 @@
+node_modules
+/public/bundle.js
+/public/index.html
+.firebase
