@@ -25,14 +25,11 @@ const config: webpack.Configuration = {
         options: devBabelConfig,
       },
       {
-        test: /\.scss/,
+        test: /\.styl$/,
         use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: { url: false },
-          },
-          'sass-loader',
+          { loader: "style-loader" },
+          { loader: "css-loader" },
+          { loader: "stylus-loader" },
         ],
       },
     ],
