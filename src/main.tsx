@@ -14,6 +14,7 @@ const Main: React.FC = () => {
         <a href="https://github.com/ruritoBlogger/ruritoBlogger.github.io">
           github
         </a>
+        <h1 className={styles.subtitle}>GW中には完成させます</h1>
       </h1>
     </div>
   );
