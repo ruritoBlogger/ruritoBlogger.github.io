@@ -1,6 +1,9 @@
 import ReactDOM from 'react-dom';
 
-const App: React.FC = () => <div><h1>hello world</h1></div>;
+import Main from './main';
+import './index.styl';
+
+const App: React.FC = () => <Main />;
 
 const app = document.getElementById('app');
 ReactDOM.render(<App />, app);
