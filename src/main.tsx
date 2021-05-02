@@ -6,11 +6,11 @@ const Main: React.FC = () => {
       <h1 className={styles.title}>何見てんだ</h1>
       <h1 className={styles.title}>まだ製作中だぞ</h1>
       <h1 className={styles.subtitle}>
-        制作の進捗は
+        制作の進捗は->
         <a href="https://twitter.com/ruriro0125">Twitter</a>
       </h1>
       <h1 className={styles.subtitle}>
-        ソースコードは
+        ソースコードは->
         <a href="https://github.com/ruritoBlogger/ruritoBlogger.github.io">
           github
         </a>
