@@ -1,0 +1,35 @@
+@import '../../template'
+
+/* overwrite */
+.inner
+    width: 50%
+    margin: 10% 25%
+    display: flex
+    justify-content: center
+    flex-direction: column
+
+@media screen and (min-width: 764px) and (max-width: 1024px)
+    .inner
+        width: 70%
+        margin: 10% 15%
+
+@media screen and (max-width: 764px)
+    .inner
+        width: 90%
+        margin: 10% 5%
+
+/* overwrite */
+.subtitle, .content
+    text-align: left
+
+/* overwrite */
+.subtitle
+    margin-top: 3%
+
+@media screen and (max-width: 764px)
+    .subtitle
+        margin-top: 5%
+
+/* overwrite */
+.content
+    margin-left: 7%
