@@ -1,0 +1,52 @@
+import styles from "./profile.styl";
+
+const Profile: React.FC = () => {
+  return (
+    <div className={styles.inner}>
+      <div className={styles.box}>
+        <h1 className={styles.title}>rurito0125</h1>
+        <div className={styles.content_block}>
+          <p className={styles.content}>立命館大学 情報理工学部 情報理工学科</p>
+          <p className={styles.content}>知能情報コース B4</p>
+          <p className={styles.content}>知能エンターテイメント研所属</p>
+        </div>
+
+        <div className={styles.content_block}>
+          <p className={styles.content}>
+            にじさんじ(さんばか)とウマ娘にハマってます
+          </p>
+          <p className={styles.content}>最近は卒論に怯えながら生きてます</p>
+        </div>
+
+        <div className={styles.image_block}>
+          <div className={styles.image_wrapper}>
+            <a href="https://twitter.com/ruriro0125">
+              <img
+                className={styles.twitter_img}
+                src="./images/twitter.png"
+              ></img>
+            </a>
+          </div>
+          <div className={styles.image_wrapper}>
+            <a href="https://github.com/ruritoBlogger">
+              <img
+                className={styles.github_img}
+                src="./images/GitHub-Mark-120px-plus.png"
+              ></img>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className={styles.box}>
+        <div className={styles.image_wrapper}>
+          <img className={styles.profile_img} src="./images/profile.jpeg"></img>
+        </div>
+        <p className={`${styles.content} ${styles.disabledWhenSmartphone}`}>
+          昔好きだったゲームのスクショ
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Profile;
