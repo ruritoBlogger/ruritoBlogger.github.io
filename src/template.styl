@@ -3,6 +3,9 @@ $black = #515151
 $title_size = 2.5vw
 $tablet_title_size = 4vw
 $smartphone_title_size = 10vw
+$subtitle_size = 1.5vw
+$tablet_subtitle_size = 2.5vw
+$smartphone_subtitle_size = 6vw
 $content_size = 1vw
 $tablet_content_size = 1.5vw
 $smartphone_content_size = 4vw
@@ -18,6 +21,7 @@ $smartphone_content_size = 4vw
         justify-content: center
 
 .title
+    color: $black
     font-size: $title_size
     text-align: center
 
@@ -29,7 +33,21 @@ $smartphone_content_size = 4vw
     .title
         font-size: $smartphone_title_size
 
+.subtitle
+    color: $black
+    font-size: $subtitle_size
+    text-align: center
+
+@media screen and (min-width: 764px) and (max-width: 1024px)
+    .subtitle
+        font-size: $tablet_subtitle_size
+
+@media screen and (max-width: 764px)
+    .subtitle
+        font-size: $smartphone_subtitle_size
+
 .content
+    color: $black
     font-size: $content_size
     text-align: center
     margin: 1% 0
