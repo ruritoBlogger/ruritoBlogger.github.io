@@ -26,8 +26,8 @@ const Skill: React.FC = () => {
         <h2 className={styles.subtitle}>Linux OS 3年</h2>
         <p className={styles.content}>
           ほぼ全ての開発をUbuntuを用いてやってました
+          基本的な操作とかは慣れてるつもりです
         </p>
-        <p className={styles.content}>基本的な操作とかは慣れてるつもりです</p>
       </div>
     </div>
   );
