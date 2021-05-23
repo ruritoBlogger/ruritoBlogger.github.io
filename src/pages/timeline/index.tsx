@@ -25,13 +25,12 @@ const TimelinePage: React.FC = () => {
       title: "初めてのwebアプリ実装",
       content:
         "Ruby on Rails5を用いて初めてwebアプリを作りました. 夏休みを全て使ってHTML + CSS + Ruby + Railsの勉強してました.",
-      link:
-        "https://github.com/ruritoBlogger/Informationization-of-refrigerator",
+      link: "https://github.com/ruritoBlogger/Informationization-of-refrigerator",
       link_text: "ソースコード(Github)",
     },
     {
       date: "2019/8",
-      title: "RoboCup 日本大会出場",
+      title: "RoboCupの日本大会出場",
       content:
         "Ri-oneというチームの一員としてRoboCup JapanOpen2019 Nagaokaに出場しました. 結果は10位中8位と微妙でしたが良い経験になりました.",
     },
@@ -45,11 +44,10 @@ const TimelinePage: React.FC = () => {
     },
     {
       date: "2020/4",
-      title: "RoboCup 世界大会に出場(権獲得)",
+      title: "RoboCupの世界大会に出場(権獲得)",
       content:
         "Ri-oneというチームの一員としてRoboCup2020 Bordeauxの出場権を獲得しました. 大会はコロナで延期になったため出場権獲得に留まっています. 出場権を獲得するためにTDPというペーパーをチームで作成しました. 私は第3章の深層強化学習部分の実装や執筆を担当しました.",
-      link:
-        "https://drive.google.com/file/d/1IkTX41iIFlZFI5_5l7lpCPS0X4Gi_vn8/view?usp=sharing",
+      link: "https://drive.google.com/file/d/1IkTX41iIFlZFI5_5l7lpCPS0X4Gi_vn8/view?usp=sharing",
       link_text: "執筆したTDP",
     },
     {

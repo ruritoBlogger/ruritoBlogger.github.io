@@ -84,7 +84,7 @@ const Card: React.FC<Props> = ({
   const classes = useStyles();
 
   return (
-    <TimelineItem>
+    <TimelineItem id={title}>
       <TimelineOppositeContent className={classes.OppositeContent}>
         <h2 className={styles.subtitle}>{date}</h2>
       </TimelineOppositeContent>

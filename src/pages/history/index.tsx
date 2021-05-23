@@ -9,8 +9,7 @@ const History: React.FC = () => {
         <p className={styles.content}>
           RoboCup JapanOpen 2020 Nagaoka 2DSoccer
           Simulation部門にRi-oneというチームの一員として参加。
-          {/* TODO: Timelineを作ったらリンク貼っておく */}
-          <span>詳しい話はこちら</span>
+          <a href="#RoboCupの日本大会出場">詳しい話はこちら</a>
         </p>
       </div>
       <div className={styles.content_block}>
@@ -18,8 +17,7 @@ const History: React.FC = () => {
         <p className={styles.content}>
           RoboCup 2020 Bordeaux 2DSoccer
           Simulation部門にRi-oneでエントリーしました。
-          {/* TODO: Timelineを作ったらリンク貼っておく */}
-          <span>詳しい話はこちら</span>
+          <a href="#RoboCupの世界大会に出場(権獲得)">詳しい話はこちら</a>
         </p>
       </div>
       <div className={styles.content_block}>
@@ -35,8 +33,7 @@ const History: React.FC = () => {
         <h2 className={styles.subtitle}>2020/9 株式会社楽天 インターン</h2>
         <p className={styles.content}>
           株式会社楽天の「二子玉川 夏の陣 2020 」に参加してました。
-          {/* TODO: Timelineを作ったらリンク貼っておく */}
-          <span>詳しい話はこちら</span>
+          <a href="#楽天のインターンに参加">詳しい話はこちら</a>
         </p>
       </div>
       <div className={styles.content_block}>
@@ -45,7 +42,7 @@ const History: React.FC = () => {
         </h2>
         <p className={styles.content}>
           オプティム サマーインターン2020に参加してました。
-          期間は2週間で、フロントエンドエンジニアとして初めての実務開発に携わりました
+          <a href="#オプティムの夏季インターンに参加">詳しい話はこちら</a>
         </p>
       </div>
       <div className={styles.content_block}>
