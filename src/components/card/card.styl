@@ -1,0 +1,21 @@
+@import '../../template'
+
+/* overwrite */
+.subtitle, .content
+    text-align: left
+    margin-bottom: 10px
+
+.dateTitle
+    display: none
+
+@media screen and (max-width: 764px)
+    .dateTitle
+        @extend .subtitle
+        display: inline-block
+        font-size: 5vw
+
+.card
+    background-color: $orange
+
+.img
+    width: 100%
