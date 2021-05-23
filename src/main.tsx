@@ -5,7 +5,7 @@ import Profile from "./pages/profile/index";
 import Skill from "./pages/skill/index";
 import History from "./pages/history/index";
 import Timeline from "./pages/timeline/index";
-import Tmp from "./tmp";
+import Copyright from "./components/copyright/index";
 
 const Main: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ const Main: React.FC = () => {
       <History />
       <Skill />
       <Timeline />
-      <Tmp />
+      <Copyright />
     </div>
   );
 };
