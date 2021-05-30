@@ -1,4 +1,4 @@
-import styles from "./skill.styl";
+import styles from "./index.module.sass";
 
 const Skill: React.FC = () => {
   return (

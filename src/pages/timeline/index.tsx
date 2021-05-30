@@ -1,7 +1,5 @@
-import Timeline from "@material-ui/lab/Timeline";
-
 import Card from "../../components/card/index";
-import styles from "./timeline.styl";
+import styles from "./index.module.sass";
 
 interface DataProps {
   date: string;
@@ -97,11 +95,9 @@ const TimelinePage: React.FC = () => {
   return (
     <div className={styles.inner}>
       <h1 className={styles.title}>制作物・実績</h1>
-      <Timeline>
-        {datas.map((data) => (
-          <Card {...data} />
-        ))}
-      </Timeline>
+      {datas.map((data) => (
+        <Card {...data} />
+      ))}
     </div>
   );
 };

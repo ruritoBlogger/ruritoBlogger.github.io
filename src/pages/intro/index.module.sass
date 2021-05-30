@@ -1,0 +1,74 @@
+@import '../template.sass'
+
+/* overwrite .inner */
+@media screen and (min-width: 1024px)
+    .inner
+        justify-content: flex-end
+
+.headline
+    background-color: $orange
+    width: 80%
+    height: 80%
+    margin: 10% 0%
+
+@media screen and (max-width: 764px)
+    .headline
+        width: 100%
+        margin: 0
+
+.headline_inner
+    height: 80%
+    margin: 10% 0%
+
+.headline_title
+    font-size: 7vw
+    text-align: right
+    animation: changeStrive 0.5s infinite
+    -webkit-background-clip: text
+    background-size: 1.75vw 1.75vw
+
+.headline_subtitle
+    font-size: 2vw
+    text-align: right
+    color: $black
+
+@media screen and (max-width: 764px)
+    .headline_title
+        font-size: 13vw
+        text-align: center
+
+    .headline_subtitle
+        margin-top: 5vh
+        font-size: 4vw
+        text-align: center
+
+.navigate
+    position: absolute
+    width: 5vw
+    right: 48%
+    top: 90%
+
+/* navigateが必要ないレイアウトの場合は隠す */
+@media screen and (max-width: 1700px)
+    .navigate
+        display: none
+
+$first_color: $black
+$second_color: $orange
+
+@keyframes changeStrive
+    0%, 100%
+        color: transparent
+        background-image: linear-gradient(-45deg, $first_color 25%, $second_color 25%, $second_color 50%, $first_color 50%, $first_color 75%, $second_color 75%, $second_color)
+
+    25%
+        color: transparent
+        background-image: linear-gradient(-45deg, $second_color 12.5%, $first_color 12.5%, $first_color 37.5%, $second_color 37.5%, $second_color 62.5%, $first_color 62.5%, $first_color 87.5%, $second_color 87.5%, $second_color)
+
+    50%
+        color: transparent
+        background-image: linear-gradient(-45deg, $second_color 25%, $first_color 25%, $first_color 50%, $second_color 50%, $second_color 75%, $first_color 75%, $first_color)
+
+    75%
+        color: transparent
+        background-image: linear-gradient(-45deg, $first_color 12.5%, $second_color 12.5%, $second_color 37.5%, $first_color 37.5%, $first_color 62.5%, $second_color 62.5%, $second_color 87.5%, $first_color 87.5%, $first_color)

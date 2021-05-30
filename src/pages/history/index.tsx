@@ -1,4 +1,4 @@
-import styles from "./history.styl";
+import styles from "./index.module.sass";
 
 const History: React.FC = () => {
   return (
