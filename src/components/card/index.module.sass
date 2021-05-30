@@ -6,8 +6,6 @@
     margin-bottom: 10px
 
 .card
-    width: 80%
-    margin: auto
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.16)
 
 .card_inner
@@ -15,14 +13,15 @@
     flex-direction: column
     margin: 2%
 
-.dateTitle
-    @extend .subtitle
+    @media screen and (max-width: 764px)
+        margin: 5%
+
+.dateContent
+    @extend .content
     display: none
 
-@media screen and (max-width: 764px)
-    .dateTitle
+    @media screen and (max-width: 764px)
         display: inline-block
-        font-size: 5vw
 
 .img
     width: 100%
