@@ -96,7 +96,7 @@ const TimelinePage: React.FC = () => {
     <div className={styles.inner}>
       <h1 className={styles.title}>制作物・実績</h1>
       {datas.map((data) => (
-        <Card {...data} />
+        <Card {...data} key={data.title} />
       ))}
     </div>
   );
