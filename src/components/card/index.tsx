@@ -29,16 +29,29 @@ const Card: React.FC<Props> = ({
   img_link,
 }) => {
   return (
-    <div key={title}>
-      <h1 className={styles.title} id={title}>
-        Card
-      </h1>
-      <p>{date}</p>
-      <p>{title}</p>
-      <p>{content}</p>
-      <p>{link}</p>
-      <p>{link_text}</p>
-      <p>{img_link}</p>
+    <div className={styles.card}>
+      <div className={styles.card_inner}>
+        <p className={styles.subtitle} id={title}>
+          {title}
+        </p>
+        {(() => {
+          if (img_link !== undefined) {
+            return <img src={img_link} className={styles.img} />;
+          } else return null;
+        })()}
+        <p className={styles.content}>{content}</p>
+        {(() => {
+          if (link !== undefined) {
+            return (
+              <div>
+                <a href={link}>
+                  <p className={styles.content}>{link_text}</p>
+                </a>
+              </div>
+            );
+          } else return null;
+        })()}
+      </div>
     </div>
   );
 };
