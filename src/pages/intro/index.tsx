@@ -1,4 +1,4 @@
-import styles from "./intro.styl";
+import styles from "./index.module.sass";
 
 const Intro: React.FC = () => {
   return (

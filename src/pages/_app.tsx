@@ -1,4 +1,4 @@
-import styles from "./main.styl";
+import "./_app.sass";
 
 import Intro from "./intro/index";
 import Profile from "./profile/index";
@@ -7,7 +7,7 @@ import History from "./history/index";
 import Timeline from "./timeline/index";
 import Copyright from "../components/copyright/index";
 
-const Main: React.FC = () => {
+const Home: React.FC = () => {
   return (
     <div>
       <Intro />
@@ -20,4 +20,4 @@ const Main: React.FC = () => {
   );
 };
 
-export default Main;
+export default Home;
