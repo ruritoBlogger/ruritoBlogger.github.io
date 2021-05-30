@@ -29,8 +29,10 @@ const Card: React.FC<Props> = ({
   img_link,
 }) => {
   return (
-    <div>
-      <h1 className={styles.title}>Card</h1>
+    <div key={title}>
+      <h1 className={styles.title} id={title}>
+        Card
+      </h1>
       <p>{date}</p>
       <p>{title}</p>
       <p>{content}</p>
