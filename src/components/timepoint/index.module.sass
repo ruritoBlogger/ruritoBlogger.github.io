@@ -1,0 +1,69 @@
+@import '../../pages/template.sass'
+
+/* overwrite area */
+
+.inner
+    width: 80%
+    margin: auto
+
+    @media screen and (max-width: 764px)
+        width: 98%
+
+.subtitle
+    text-align: left
+    padding-left: 10%
+
+/* overwrite area */
+
+.dateWrapper
+    min-width: 100px
+    position: relative
+
+    @media screen and (max-width: 764px)
+        display: none
+
+.dateSmartphoneWrapper
+    margin-bottom: 6%
+
+    @media screen and (min-width: 764px)
+        display: none
+
+.dateTitle
+    @extend .subtitle
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translateX(-50%) translateY(-50%)
+    -webkit-transform: translateX(-50%) translateY(-50%)
+
+.lineBlock
+    min-width: 60px
+    text-align: center
+    position: relative
+
+.line
+    height: 50%
+    width: 4px
+    margin: auto
+    background-color: $black
+
+.ellipse
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translateX(-50%) translateY(-50%)
+    -webkit-transform: translateX(-50%) translateY(-50%)
+    width: 25px
+    height: 25px
+    border-radius: 50%
+    background-color: $black
+
+    @media screen and (max-width: 764px)
+        width: 20px
+        height: 20px
+        top: 55%
+
+.cardWrapper
+    margin: 2%
+    display: flex
+    flex-direction: column

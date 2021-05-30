@@ -1,5 +1,5 @@
-import Card from "../../components/card/index";
 import styles from "./index.module.sass";
+import TimePoint from "../../components/timepoint/index";
 
 interface DataProps {
   date: string;
@@ -96,7 +96,7 @@ const TimelinePage: React.FC = () => {
     <div className={styles.inner}>
       <h1 className={styles.title}>制作物・実績</h1>
       {datas.map((data) => (
-        <Card {...data} key={data.title} />
+        <TimePoint data={data} key={data.title} />
       ))}
     </div>
   );

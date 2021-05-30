@@ -34,6 +34,7 @@ const Card: React.FC<Props> = ({
         <p className={styles.subtitle} id={title}>
           {title}
         </p>
+        <p className={styles.dateContent}>{date}</p>
         {(() => {
           if (img_link !== undefined) {
             return <img src={img_link} className={styles.img} />;
