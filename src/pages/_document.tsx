@@ -39,7 +39,6 @@ class MyDocument extends Document implements CustomDocumentInterface {
     return (
       <Html lang="ja-JP">
         <Head>
-          <title>{this.title}</title>
           <meta charSet="utf-8"></meta>
           <meta name="description" content={this.description} />
           <link rel="icon" href="/images/favicon.ico" />
