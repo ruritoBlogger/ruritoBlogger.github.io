@@ -1,15 +1,16 @@
-[デプロイ先]("rurito0125.dev")
 
 ## これは何
 
-portfolio です
+portfolioです
 
-web エンジニアなのに portfolio 無いのはマズイかな？と思ったので作りました.
+webエンジニアなのにportfolio無いのはマズイかな？と思ったので作りました.
+
+[デプロイ先](https://rurito0125.dev)
 
 ## 技術スタック
 
 Next.js(SSG) + TypeScript + Firebase を使いました
 
-css modules で書いてます.
+css modulesで書いてます.
 
-test コードとかは書いてないです. storybook も使ってません.
+testコードとかは書いてないです. storybookも使ってません.
