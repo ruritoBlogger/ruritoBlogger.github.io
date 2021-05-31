@@ -1,9 +1,12 @@
 @import '../template.sass'
 
-/* overwrite .inner */
+/* overwrite area */
+
 @media screen and (min-width: 1024px)
     .inner
         justify-content: flex-end
+
+/* overwrite area */
 
 .headline
     background-color: $orange
@@ -11,8 +14,7 @@
     height: 80%
     margin: 10% 0%
 
-@media screen and (max-width: 764px)
-    .headline
+    @media screen and (max-width: 764px)
         width: 100%
         margin: 0
 
@@ -27,17 +29,16 @@
     -webkit-background-clip: text
     background-size: 1.75vw 1.75vw
 
+    @media screen and (max-width: 764px)
+        font-size: 13vw
+        text-align: center
+
 .headline_subtitle
     font-size: 2vw
     text-align: right
     color: $black
 
-@media screen and (max-width: 764px)
-    .headline_title
-        font-size: 13vw
-        text-align: center
-
-    .headline_subtitle
+    @media screen and (max-width: 764px)
         margin-top: 5vh
         font-size: 4vw
         text-align: center
@@ -48,9 +49,7 @@
     right: 48%
     top: 90%
 
-/* navigateが必要ないレイアウトの場合は隠す */
-@media screen and (max-width: 1700px)
-    .navigate
+    @media screen and (max-width: 1024px)
         display: none
 
 $first_color: $black
