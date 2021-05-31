@@ -8,6 +8,7 @@ interface DataProps {
   link?: string;
   link_text?: string;
   img_link?: string;
+  img_alt?: string;
 }
 
 const TimelinePage: React.FC = () => {
@@ -56,6 +57,7 @@ const TimelinePage: React.FC = () => {
       link: "https://github.com/ruritoBlogger/TaskManagement_app",
       link_text: "ソースコード(Github)",
       img_link: "./images/TaskManagement.png",
+      img_alt: "Todoアプリのトップページのイメージ",
     },
     {
       date: "2020/9",
@@ -65,6 +67,7 @@ const TimelinePage: React.FC = () => {
       link: "https://github.com/shortintern2020-B-frontier/TeamB",
       link_text: "ソースコード(Github)",
       img_link: "./images/TheaTalk.png",
+      img_alt: "TheaTalkのメインページのイメージ",
     },
     {
       date: "2020/9",
@@ -80,6 +83,7 @@ const TimelinePage: React.FC = () => {
       link: "https://github.com/ruritoBlogger/Sanbaka_1.5_fan_site",
       link_text: "ソースコード(Github)",
       img_link: "./images/fansite.png",
+      img_alt: "ファンサイトのトップページのイメージ",
     },
     {
       date: "2021/5",
@@ -89,6 +93,7 @@ const TimelinePage: React.FC = () => {
       link: "https://github.com/ruritoBlogger/ruritoBlogger.github.io",
       link_text: "ソースコード(Github)",
       img_link: "./images/portfolio.png",
+      img_alt: "ポートフォリオのイメージ",
     },
   ];
 

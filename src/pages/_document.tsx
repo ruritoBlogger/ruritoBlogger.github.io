@@ -23,6 +23,7 @@ class MyDocument extends Document implements CustomDocumentInterface {
   description = "rurito0125のポートフォリオです.";
 
   render() {
+    console.log(`${this.url}/images/ogp.png`);
     return (
       <Html lang="ja-JP">
         <Head>

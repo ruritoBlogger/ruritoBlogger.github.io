@@ -24,6 +24,7 @@ const Profile: React.FC = () => {
               <img
                 className={styles.twitter_img}
                 src="./images/twitter.png"
+                alt="Twitterのアイコン"
               ></img>
             </a>
           </div>
@@ -32,6 +33,7 @@ const Profile: React.FC = () => {
               <img
                 className={styles.github_img}
                 src="./images/GitHub-Mark-120px-plus.png"
+                alt="GitHubのアイコン"
               ></img>
             </a>
           </div>
@@ -39,7 +41,11 @@ const Profile: React.FC = () => {
       </div>
       <div className={styles.box}>
         <div className={styles.image_wrapper}>
-          <img className={styles.profile_img} src="./images/profile.jpeg"></img>
+          <img
+            className={styles.profile_img}
+            src="./images/profile.jpeg"
+            alt="昔好きだったゲームのスクショ"
+          ></img>
         </div>
         <p className={`${styles.content} ${styles.disabledWhenSmartphone}`}>
           昔好きだったゲームのスクショ

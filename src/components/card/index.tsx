@@ -7,6 +7,7 @@ interface Props {
   link?: string;
   link_text?: string;
   img_link?: string;
+  img_alt?: string;
 }
 
 /**
@@ -19,6 +20,7 @@ interface Props {
  * @param link 表示するカードのリンク
  * @param link_text 表示するカードのリンクで表示するメッセージ
  * @param img_link 表示するカードの画像のリンク(存在しない場合もある)
+ * @param img_alt 表示するカードの画像の説明(存在しない場合もある)
  */
 const Card: React.FC<Props> = ({
   date,
@@ -27,6 +29,7 @@ const Card: React.FC<Props> = ({
   link,
   link_text,
   img_link,
+  img_alt,
 }) => {
   return (
     <div className={styles.card}>
@@ -37,7 +40,7 @@ const Card: React.FC<Props> = ({
         <p className={styles.dateContent}>{date}</p>
         {(() => {
           if (img_link !== undefined) {
-            return <img src={img_link} className={styles.img} />;
+            return <img src={img_link} className={styles.img} alt={img_alt} />;
           } else return null;
         })()}
         <p className={styles.content}>{content}</p>
