@@ -1,4 +1,4 @@
-import styles from "./profile.styl";
+import styles from "./index.module.sass";
 
 const Profile: React.FC = () => {
   return (
