@@ -8,8 +8,8 @@ web エンジニアなのに portfolio 無いのはマズイかな？と思っ�
 
 ## 技術スタック
 
-TypeScript + stylus + React + Firebase を使いました
+Next.js(SSG) + TypeScript + Firebase を使いました
 
-css modules で書いてますが, material-ui に甘えているので一部は css in js になってます.
+css modules で書いてます.
 
 test コードとかは書いてないです. storybook も使ってません.
