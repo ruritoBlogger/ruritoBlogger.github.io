@@ -1,0 +1,27 @@
+@import '../../pages/template.sass'
+
+/* overwrite */
+.subtitle, .content
+    text-align: left
+    margin-bottom: 10px
+
+.card
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.16)
+
+.card_inner
+    display: flex
+    flex-direction: column
+    margin: 2%
+
+    @media screen and (max-width: 764px)
+        margin: 5%
+
+.dateContent
+    @extend .content
+    display: none
+
+    @media screen and (max-width: 764px)
+        display: inline-block
+
+.img
+    width: 100%
