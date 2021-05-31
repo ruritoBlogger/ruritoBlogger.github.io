@@ -35,12 +35,14 @@ class MyDocument extends Document implements CustomDocumentInterface {
           <meta property="og:url" content={this.url} />
           <meta property="og:type" content="website" />
           <meta property="og:title" content={this.title} />
+          <meta name="og:image" content={`${this.url}/images/ogp.png`} />
           <meta property="og:locale" content="ja_JP" />
           <meta name="format-detection" content="telephone=no" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@ruriro0125" />
           <meta name="twitter:creator" content="@ruriro0125" />
           <meta name="twitter:title" content={this.title} />
+          <meta name="twitter:image" content={`${this.url}/images/ogp.png`} />
           <meta name="twitter:description" content={this.description} />
           <meta name="robots" content="noindex,nofollow" />
         </Head>
