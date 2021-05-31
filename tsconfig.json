@@ -59,6 +59,6 @@
     "isolatedModules": true
   },
   "include": ["src"],
-  "files": ["next-env.d.ts", "src/pages/index.d.ts"],
+  "files": ["next-env.d.ts"],
   "exclude": ["node_modules"]
 }
