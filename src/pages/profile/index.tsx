@@ -13,8 +13,9 @@ const Profile: React.FC = () => {
 
         <div className={styles.content_block}>
           <p className={styles.content}>
-            にじさんじ(さんばか)とウマ娘にハマってます
+            UbuntuとVimに侵食されたVSCodeをよく使います
           </p>
+          <p className={styles.content}>にじさんじ(さんばか)が好きです</p>
           <p className={styles.content}>最近は卒論に怯えながら生きてます</p>
         </div>
 
