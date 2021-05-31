@@ -7,6 +7,8 @@ webエンジニアなのにportfolio無いのはマズイかな？と思った�
 
 [デプロイ先](https://rurito0125.dev)
 
+[デプロイ先](rurito0125.dev)
+
 ## 技術スタック
 
 Next.js(SSG) + TypeScript + Firebase を使いました
