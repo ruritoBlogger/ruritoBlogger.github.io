@@ -1,33 +1,30 @@
 @import '../template.sass'
 
-/* overwrite */
+/* overwrite area */
+
 .inner
     width: 50%
     margin: 10% 25%
     flex-direction: column
 
-@media screen and (min-width: 764px) and (max-width: 1024px)
-    .inner
+    @media screen and (min-width: 764px) and (max-width: 1024px)
         width: 70%
         margin: 10% 15%
 
-@media screen and (max-width: 764px)
-    .inner
+    @media screen and (max-width: 764px)
         width: 90%
         margin: 10% 5%
 
-/* overwrite */
 .subtitle, .content
     text-align: left
 
-/* overwrite */
 .subtitle
     margin-top: 3%
 
-@media screen and (max-width: 764px)
-    .subtitle
+    @media screen and (max-width: 764px)
         margin-top: 5%
 
-/* overwrite */
 .content
     margin-left: 7%
+
+/* overwrite area */
