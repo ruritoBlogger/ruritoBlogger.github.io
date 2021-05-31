@@ -10,7 +10,11 @@ const Intro: React.FC = () => {
           <h2 className={styles.headline_subtitle}>よわよわエンジニア</h2>
         </div>
       </div>
-      <img className={styles.navigate} src="/images/expand.svg"></img>
+      <img
+        className={styles.navigate}
+        src="/images/expand.svg"
+        alt="スクロールナビゲーター"
+      ></img>
     </div>
   );
 };

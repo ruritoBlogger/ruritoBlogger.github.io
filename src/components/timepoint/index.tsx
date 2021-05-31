@@ -10,6 +10,7 @@ interface Props {
     link?: string;
     link_text?: string;
     img_link?: string;
+    img_alt?: string;
   };
 }
 
