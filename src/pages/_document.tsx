@@ -11,6 +11,18 @@ interface CustomDocumentInterface {
   description: string;
 }
 
+const generateJsonLd = () => {
+  const jsonLd = {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    headline: "るりとのポートフォリオ",
+    datePublished: "2021-02-05T23:00:00+09:00",
+    dateModified: "2021-02-05T23:00:00+09:00",
+    image: ["https://rurito0125.dev/images/ogp.png"],
+  };
+  return JSON.stringify(jsonLd);
+};
+
 class MyDocument extends Document implements CustomDocumentInterface {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -23,7 +35,7 @@ class MyDocument extends Document implements CustomDocumentInterface {
   description = "rurito0125のポートフォリオです.";
 
   render() {
-    console.log(`${this.url}/images/ogp.png`);
+    const jsonLd = generateJsonLd();
     return (
       <Html lang="ja-JP">
         <Head>
@@ -45,6 +57,13 @@ class MyDocument extends Document implements CustomDocumentInterface {
           <meta name="twitter:title" content={this.title} />
           <meta name="twitter:image" content={`${this.url}/images/ogp.png`} />
           <meta name="twitter:description" content={this.description} />
+          {jsonLd && (
+            <script
+              key="json-ld"
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: jsonLd }}
+            />
+          )}
         </Head>
         <body>
           <Main />
