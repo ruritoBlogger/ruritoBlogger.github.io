@@ -19,7 +19,7 @@ class MyDocument extends Document implements CustomDocumentInterface {
   }
 
   url = "https://rurito0125.dev";
-  title = `rurito0125's portfolio`;
+  title = `るりとのポートフォリオ`;
   description = "rurito0125のポートフォリオです.";
 
   render() {

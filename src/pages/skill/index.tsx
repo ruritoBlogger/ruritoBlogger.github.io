@@ -23,10 +23,9 @@ const Skill: React.FC = () => {
         </p>
       </div>
       <div className={styles.content_block}>
-        <h2 className={styles.subtitle}>Linux OS 3年</h2>
+        <h2 className={styles.subtitle}>その他</h2>
         <p className={styles.content}>
-          ほぼ全ての開発をUbuntuを用いてやってました
-          基本的な操作とかは慣れてるつもりです
+          Unixコマンドとかgitは一般学生猿ジニア並に出来る筈です
         </p>
       </div>
     </div>
