@@ -1,23 +1,9 @@
 import "./_app.sass";
 
-import Intro from "./intro/index";
-import Profile from "./profile/index";
-import Skill from "./skill/index";
-import History from "./history/index";
-import Timeline from "./timeline/index";
-import Copyright from "../components/copyright/index";
+import type { AppProps } from 'next/app'
 
-const Home: React.FC = () => {
-  return (
-    <div>
-      <Intro />
-      <Profile />
-      <History />
-      <Skill />
-      <Timeline />
-      <Copyright />
-    </div>
-  );
-};
+function MyApp({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />
+}
 
-export default Home;
+export default MyApp
