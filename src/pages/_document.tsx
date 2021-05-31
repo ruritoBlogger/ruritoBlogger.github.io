@@ -23,6 +23,7 @@ class MyDocument extends Document implements CustomDocumentInterface {
   description = "rurito0125のポートフォリオです.";
 
   render() {
+    console.log(`${this.url}/images/ogp.png`);
     return (
       <Html lang="ja-JP">
         <Head>
@@ -44,7 +45,6 @@ class MyDocument extends Document implements CustomDocumentInterface {
           <meta name="twitter:title" content={this.title} />
           <meta name="twitter:image" content={`${this.url}/images/ogp.png`} />
           <meta name="twitter:description" content={this.description} />
-          <meta name="robots" content="noindex,nofollow" />
         </Head>
         <body>
           <Main />
