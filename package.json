@@ -12,7 +12,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "firebase-functions": "^3.14.1",
     "next": "^10.2.2",
     "next-sitemap": "^1.6.99",
     "react": "17.0.1",
