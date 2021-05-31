@@ -29,6 +29,7 @@ class MyDocument extends Document implements CustomDocumentInterface {
           <title>{this.title}</title>
           <meta charSet="utf-8"></meta>
           <meta name="description" content={this.description} />
+          <link rel="icon" href="/images/favicon.ico" />
           <meta property="og:description" content={this.description} />
           <meta property="og:site_name" content={this.title} />
           <meta property="og:url" content={this.url} />
