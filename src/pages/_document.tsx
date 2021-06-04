@@ -63,6 +63,8 @@ class MyDocument extends Document implements CustomDocumentInterface {
               dangerouslySetInnerHTML={{ __html: jsonLd }}
             />
           )}
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Noto+Sans+JP&family=Roboto&display=swap" rel="stylesheet" />
         </Head>
         <body>
           <Main />
