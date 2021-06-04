@@ -48,8 +48,8 @@ const Card: React.FC<Props> = ({
           if (link !== undefined) {
             return (
               <div>
-                <a href={link} tabIndex={-1}>
-                  <p className={styles.content}>{link_text}</p>
+                <a href={link} tabIndex={-1} className={styles.link_content}>
+                  <p>{link_text}</p>
                 </a>
               </div>
             );
