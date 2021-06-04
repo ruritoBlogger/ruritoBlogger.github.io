@@ -26,7 +26,8 @@ const TimePoint: React.FC<Props> = ({ data }) => {
       </div>
       <div className={styles.lineBlock}>
         <p className={styles.line} />
-        <p className={styles.ellipse} />
+        {/* FIXME: tabindexを当てる場合・対話的コンテンツじゃないとダメらしいのでpタグ使うの辞めたい */}
+        <p className={styles.ellipse} tabIndex={0} />
         <p className={styles.line} />
       </div>
       <div className={styles.cardWrapper}>
