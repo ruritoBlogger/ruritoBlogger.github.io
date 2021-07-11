@@ -79,7 +79,7 @@ const TimelinePage: React.FC = () => {
       date: "2020/9",
       title: "非公式ファンサイト制作",
       content:
-        "私が良く観てるVtuberの非公式ファンサイトを勝手に作りました. React + Typescript + Firebaseを用いたサーバーレスなwebサイトです. Atomic Componentsの概念の導入やレスポンシブデザイン対応など色々苦労しました. これもNext.jsを用いてリファクタリングしたいです.",
+        "私が良く観てるVtuberの非公式ファンサイトを勝手に作りました. Next.js + TypeScript + Vercelを使って実装してます. Atomic Componentsの概念の導入やレスポンシブデザイン対応など色々苦労しました. 現在リファクタリングしてます.",
       link: "https://github.com/ruritoBlogger/Sanbaka_1.5_fan_site",
       link_text: "ソースコード(Github)",
       img_link: "./images/fansite.png",
