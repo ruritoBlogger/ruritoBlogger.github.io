@@ -9,7 +9,8 @@
 /* overwrite area */
 
 .headline
-    background-color: $orange
+    position: relative
+    background-color: #c93c35
     width: 80%
     height: 80%
     margin: 10% 0%
@@ -36,7 +37,7 @@
 .headline_subtitle
     font-size: 2vw
     text-align: right
-    color: $black
+    color: #f1f1f1
 
     @media screen and (max-width: 764px)
         margin-top: 5vh
@@ -52,8 +53,8 @@
     @media screen and (max-width: 1024px)
         display: none
 
-$first_color: $black
-$second_color: $orange
+$first_color: #f1f1f1
+$second_color: #c93c35
 
 @keyframes changeStrive
     0%, 100%
@@ -71,3 +72,49 @@ $second_color: $orange
     75%
         color: transparent
         background-image: linear-gradient(-45deg, $first_color 12.5%, $second_color 12.5%, $second_color 37.5%, $first_color 37.5%, $first_color 62.5%, $second_color 62.5%, $second_color 87.5%, $first_color 87.5%, $first_color)
+
+.background_icons
+    position: absolute
+    overflow: hidden
+    width: 100%
+    height: 100%
+    top: 0
+
+.background_icon_move_top
+    position: absolute
+    bottom: 0
+    animation: up 8s ease-in infinite, shake 8s linear infinite
+
+@for $i from 0 through 5
+    .background_icon_move_top[data-kind='#{$i}']
+        animation-delay: #{$i} + s
+        left: #{$i} + 5%
+
+.background_icon
+    position: absolute
+    z-index: 0
+    bottom: 0
+    width: 50px
+    height: auto
+    background-color: transparent
+    animation: rotateIcon 4s linear infinite
+
+@keyframes rotateIcon
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
+
+@keyframes up
+    0%
+        bottom: -20%
+    100%
+        bottom: 100%
+
+@keyframes shake
+    0%,50%, 100%
+        transform: translateX(0)
+    25%
+        transform: translateX(-25px)
+    75%
+        transform: translateX(25px)

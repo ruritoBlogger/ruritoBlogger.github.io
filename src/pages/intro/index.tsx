@@ -4,6 +4,22 @@ import { useEffect } from "react";
 const Intro: React.FC = () => {
   const id = "navigator";
 
+  const ShowBackgroundIcons = () => {
+    let icons = [];
+    for (let i = 0; i < 5; i++) {
+      icons.push(
+        <div className={styles.background_icon_move_top} data-kind={i}>
+          <img
+            className={styles.background_icon}
+            src="./images/ange_icon_small.png"
+            alt="angeのアイコン"
+          ></img>
+        </div>
+      );
+    }
+    return <div>{icons}</div>;
+  };
+
   // FIXME: null回避のやり方が微妙よな
   const hiddenNavigator = () => {
     if (200 < window.scrollY) {
@@ -31,6 +47,9 @@ const Intro: React.FC = () => {
           <h1 className={styles.headline_title}>rurito0125's</h1>
           <h1 className={styles.headline_title}>Portfolio</h1>
           <h2 className={styles.headline_subtitle}>よわよわエンジニア</h2>
+        </div>
+        <div className={styles.background_icons}>
+          <ShowBackgroundIcons />
         </div>
       </div>
       <img

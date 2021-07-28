@@ -1,5 +1,4 @@
 import styles from "./index.module.sass";
-import AngeMotif from "../../components/angeMotif";
 
 const Profile: React.FC = () => {
   return (
@@ -42,7 +41,6 @@ const Profile: React.FC = () => {
         </div>
       </div>
       <div className={styles.box}>
-        <AngeMotif />
         {/*
         <div className={styles.image_wrapper}>
           <img
@@ -52,6 +50,13 @@ const Profile: React.FC = () => {
           ></img>
         </div>
         */}
+        <div className={styles.image_wrapper}>
+          <img
+            className={styles.profile_img}
+            src="./images/ange_icon_large.png"
+            alt="昔好きだったゲームのスクショ"
+          ></img>
+        </div>
         <p className={`${styles.content} ${styles.disabledWhenSmartphone}`}>
           {/*昔好きだったゲームのスクショ */}
           アンジュのロゴらしき何か
