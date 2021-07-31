@@ -9,7 +9,8 @@
 /* overwrite area */
 
 .headline
-    background-color: $orange
+    position: relative
+    background-color: $ange_orange
     width: 80%
     height: 80%
     margin: 10% 0%
@@ -36,12 +37,26 @@
 .headline_subtitle
     font-size: 2vw
     text-align: right
-    color: $black
+    color: $white
 
     @media screen and (max-width: 764px)
         margin-top: 5vh
         font-size: 4vw
         text-align: center
+
+.headline_background_block
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    overflow: hidden
+
+.headline_background_icon
+    position: absolute
+    width: 4vw
+    height: 4vw
+    top: 100%
 
 .navigate
     position: absolute
@@ -52,8 +67,9 @@
     @media screen and (max-width: 1024px)
         display: none
 
-$first_color: $black
-$second_color: $orange
+// $first_color: $black
+$first_color: $white
+$second_color: $ange_orange
 
 @keyframes changeStrive
     0%, 100%
