@@ -7,7 +7,9 @@ import { CreateShakeAndUpAnimation } from "../../animations/CreateShakeAndUpAnim
 const Intro: React.FC = () => {
   const id = "navigator";
   let boxesRef: MutableRefObject<null>[] = [];
-  const parentRef = useRef(null);
+
+  // FIXME: anyで握りつぶしちゃ＾〜う
+  const parentRef: any = useRef(null);
   for (let i = 0; i < 5; i++) {
     boxesRef.push(useRef(null));
   }
