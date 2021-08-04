@@ -4,17 +4,18 @@ import Skill from "./skill/index";
 import History from "./history/index";
 import Timeline from "./timeline/index";
 import Copyright from "../components/copyright/index";
+import LoadingAnimation from "../components/loadingAnimation/index";
 
 const Home: React.FC = () => {
   return (
-    <div>
+    <LoadingAnimation>
       <Intro />
       <Profile />
       <History />
       <Skill />
       <Timeline />
       <Copyright />
-    </div>
+    </LoadingAnimation>
   );
 };
 
