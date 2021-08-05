@@ -43,6 +43,7 @@ const Intro: React.FC = () => {
    * FIXME: 可読性が死んだ！！！この人でなし！！！
    */
   useEffect(() => {
+    console.log("test");
     const parentWidth = parentRef.current ? parentRef.current.offsetWidth : 0;
     const parentHeight = parentRef.current ? parentRef.current.offsetHeight : 0;
     for (let i = 0; i < boxesRef.length; i++) {
@@ -58,7 +59,7 @@ const Intro: React.FC = () => {
         duration: getRandomValue(3, 12),
       });
     }
-  }, [parentRef.current]);
+  }, []);
 
   /**
    * スクロールの導線の表示・非常時を管理する
