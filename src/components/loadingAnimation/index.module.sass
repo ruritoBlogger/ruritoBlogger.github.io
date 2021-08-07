@@ -1,0 +1,41 @@
+@import '../../pages/template.sass'
+
+.loading_inner
+    position: relative
+
+.animation_block
+    width: 100%
+    height: 100vh
+    position: absolute
+    z-index: 1
+    background-color: $ange_orange
+
+.animation_block_inner
+    position: transparent
+    display: flex
+    flex-direction: row
+    height: 50vh
+    width: 50%
+    max-width: 400px
+    margin: auto
+    margin-top: 25vh
+    margin-bottom: 25vh
+
+    @media screen and (max-width: 764px)
+        flex-direction: column
+
+.animation_icon_block
+    margin: auto
+
+.animation_title_block
+    margin: auto
+
+.animation_title
+    font-size: 48px
+    color: $white
+
+    @media screen and ( max-width: 764px )
+        font-size: 36px
+
+.animation_char
+    display: inline-block

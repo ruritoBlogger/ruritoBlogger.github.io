@@ -3,25 +3,16 @@ import { useEffect, useRef } from "react";
 import { MutableRefObject } from "react";
 
 import { CreateShakeAndUpAnimation } from "../../animations/CreateShakeAndUpAnimation";
-import { CreateMovingWindowFromRightAnimation } from "../../animations/CreateMovingWindowFromRightAnimation";
 
 const Intro: React.FC = () => {
   const id = "navigator";
-  const animationsLength: number[] = [2, 3, 3, 2];
-  let animationStartTiming: number[] = [0, 0, 0, 1, 3.3];
-
   let boxesRef: MutableRefObject<null>[] = [];
-  let titlesRef: MutableRefObject<null>[] = [];
 
   // FIXME: anyで握りつぶしちゃ＾〜う
   const parentRef: any = useRef(null);
 
   for (let i = 0; i < 5; i++) {
     boxesRef.push(useRef(null));
-  }
-
-  for (let i = 0; i < 3; i++) {
-    titlesRef.push(useRef(null));
   }
 
   const getRandomValue = (min: number, max: number): number => {
@@ -43,11 +34,12 @@ const Intro: React.FC = () => {
    * FIXME: 可読性が死んだ！！！この人でなし！！！
    */
   useEffect(() => {
+    console.log("test");
     const parentWidth = parentRef.current ? parentRef.current.offsetWidth : 0;
     const parentHeight = parentRef.current ? parentRef.current.offsetHeight : 0;
     for (let i = 0; i < boxesRef.length; i++) {
       CreateShakeAndUpAnimation(boxesRef[i], {
-        startTime: animationStartTiming[4] + getRandomValue(0, 1) * i,
+        startTime: getRandomValue(0, 1) * i,
         xPosition:
           parentWidth / 5 +
           (parentWidth / 7) * i +
@@ -58,7 +50,7 @@ const Intro: React.FC = () => {
         duration: getRandomValue(3, 12),
       });
     }
-  }, [parentRef.current]);
+  }, []);
 
   /**
    * スクロールの導線の表示・非常時を管理する
@@ -67,18 +59,6 @@ const Intro: React.FC = () => {
     if (window.innerWidth / window.innerHeight < 2.25) {
       window.addEventListener("scroll", hiddenNavigator);
     } else document.getElementById(id)!.style.visibility = "hidden";
-
-    CreateMovingWindowFromRightAnimation(parentRef, {
-      startTime: animationStartTiming[0],
-      duration: animationsLength[0],
-    });
-
-    titlesRef.map((titleRef, i) =>
-      CreateMovingWindowFromRightAnimation(titleRef, {
-        startTime: animationStartTiming[i + 1],
-        duration: animationsLength[i + 1],
-      })
-    );
 
     return () => {
       if (window.innerWidth / window.innerHeight < 2.25) {
@@ -91,15 +71,9 @@ const Intro: React.FC = () => {
     <div className={styles.inner}>
       <div className={styles.headline} ref={parentRef}>
         <div className={styles.headline_inner}>
-          <h1 className={styles.headline_title} ref={titlesRef[0]}>
-            rurito0125's
-          </h1>
-          <h1 className={styles.headline_title} ref={titlesRef[1]}>
-            Portfolio
-          </h1>
-          <h2 className={styles.headline_subtitle} ref={titlesRef[2]}>
-            よわよわエンジニア
-          </h2>
+          <h1 className={styles.headline_title}>rurito0125's</h1>
+          <h1 className={styles.headline_title}>Portfolio</h1>
+          <h2 className={styles.headline_subtitle}>よわよわエンジニア</h2>
         </div>
         <div className={styles.headline_background_block}>
           {(() => {
