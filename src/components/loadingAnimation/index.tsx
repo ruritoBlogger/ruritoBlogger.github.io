@@ -12,7 +12,7 @@ interface Props {
 const LoadingAnimation: React.FC<Props> = ({ children }) => {
   // FIXME: anyで握りつぶしちゃ＾〜う
   const windowRef: any = useRef(null);
-  const imageRef = useRef(null);
+  const imageRef: any = useRef(null);
   const anotherRef = useRef(null);
 
   const animationTime = 7.5;
@@ -43,8 +43,8 @@ const LoadingAnimation: React.FC<Props> = ({ children }) => {
     document.addEventListener("touchmove", noScroll, { passive: false });
     document.addEventListener("mousewheel", noScroll, { passive: false });
     setTimeout(() => {
-      document.removeEventListener("touchmove", noScroll, { passive: false });
-      document.removeEventListener("mousewheel", noScroll, { passive: false });
+      document.removeEventListener("touchmove", noScroll);
+      document.removeEventListener("mousewheel", noScroll);
     }, animationTime * 1000);
   }, []);
 
