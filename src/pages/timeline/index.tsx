@@ -95,6 +95,16 @@ const TimelinePage: React.FC = () => {
       img_link: "./images/portfolio.png",
       img_alt: "ポートフォリオのイメージ",
     },
+    {
+      date: "2021/9",
+      title: "アニメーションライブラリーを制作(中)",
+      content:
+        "GSAPを用いたアニメーションを簡単に使いたいなという気持ちから制作を開始しました。このサイトのLoading中のアニメーションとかもこのライブラリーのやつを使ってます(多分)",
+      link: "https://github.com/ruritoBlogger/gsap-animation-library",
+      link_text: "ソースコード(Github)",
+      img_link: "./images/sampleAnimation.gif",
+      img_alt: "アニメーションのサンプル",
+    },
   ];
 
   return (
