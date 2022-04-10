@@ -1,6 +1,6 @@
 import styles from "./index.module.sass";
 
-const Skill: React.FC = () => {
+export const SkillTemplate: React.FC = () => {
   return (
     <div className={styles.inner}>
       <h1 className={styles.title}>スキル</h1>
@@ -58,5 +58,3 @@ const Skill: React.FC = () => {
     </div>
   );
 };
-
-export default Skill;
