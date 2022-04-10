@@ -22,3 +22,12 @@ export interface IHistoryData {
 export interface HistoryTemplateProps {
     datas: IHistoryData[]
 }
+
+export interface ISkillData {
+    title: string;
+    content: string;
+}
+
+export interface SkillTemplateProps {
+    datas: ISkillData[]
+}
