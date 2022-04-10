@@ -1,6 +1,6 @@
 import styles from "./index.module.sass";
 
-const History: React.FC = () => {
+export const HistoryTemplate: React.FC = () => {
   return (
     <div className={styles.inner}>
       <h1 className={styles.title}>経歴</h1>
@@ -56,5 +56,3 @@ const History: React.FC = () => {
     </div>
   );
 };
-
-export default History;

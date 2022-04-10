@@ -1,5 +1,5 @@
 import styles from "./index.module.sass";
-import { TimePoint } from "../../components/";
+import { TimePoint } from "../../";
 
 interface DataProps {
   date: string;
@@ -11,7 +11,7 @@ interface DataProps {
   img_alt?: string;
 }
 
-const TimelinePage: React.FC = () => {
+export const TimelineTemplate: React.FC = () => {
   const datas: DataProps[] = [
     {
       date: "2017/5",
@@ -116,5 +116,3 @@ const TimelinePage: React.FC = () => {
     </div>
   );
 };
-
-export default TimelinePage;

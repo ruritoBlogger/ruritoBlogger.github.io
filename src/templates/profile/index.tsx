@@ -1,6 +1,6 @@
 import styles from "./index.module.sass";
 
-const Profile: React.FC = () => {
+export const ProfileTemplate: React.FC = () => {
   return (
     <div className={styles.inner}>
       <div className={styles.box}>
@@ -55,5 +55,3 @@ const Profile: React.FC = () => {
     </div>
   );
 };
-
-export default Profile;
