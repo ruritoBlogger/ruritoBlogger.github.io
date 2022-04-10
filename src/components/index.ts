@@ -1,2 +1,5 @@
 import { LoadingAnimation, TextAnimation } from "./animations"
-export { LoadingAnimation, TextAnimation }
+import { TimePoint } from "./timepoint"
+import { Card } from "./card"
+import { Copyright } from "./copyright"
+export { LoadingAnimation, TextAnimation, TimePoint, Card, Copyright }
