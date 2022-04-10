@@ -125,15 +125,13 @@ export const TimelineDatas: ITimelineData[] = [
         img_alt: "ポートフォリオのイメージ",
     },
     {
-        date: "2021/9",
-        title: "アニメーションライブラリーを制作(中)",
+        date: "2022/x",
+        title: "東証に上場している株式の分析ツール(実装中)",
         content: `
-          GSAPを用いたアニメーションを簡単に使いたいなという気持ちから制作を開始しました。
-          このサイトのLoading中のアニメーションとかもこのライブラリーのやつを使ってます(多分)
+          frontendはNext.js + TypeScriptを用いて実装中です.
+          backendはNest.js + typeormを用いて実装中です.
+          株式のデータを取得・取り扱うためにflask + yfinanceを用いた別サーバーも実装をしています.
+          一通り実装が終わり次第公開する予定です...
         `,
-        link: "https://github.com/ruritoBlogger/gsap-animation-library",
-        link_text: "ソースコード(Github)",
-        img_link: "./images/sampleAnimation.gif",
-        img_alt: "アニメーションのサンプル",
     },
 ]
