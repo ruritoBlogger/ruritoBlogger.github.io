@@ -22,7 +22,7 @@ interface Props {
  * @param img_link 表示するカードの画像のリンク(存在しない場合もある)
  * @param img_alt 表示するカードの画像の説明(存在しない場合もある)
  */
-const Card: React.FC<Props> = ({
+export const Card: React.FC<Props> = ({
   date,
   title,
   content,
@@ -59,5 +59,3 @@ const Card: React.FC<Props> = ({
     </div>
   );
 };
-
-export default Card;
