@@ -82,6 +82,7 @@ export const IntroTemplate: React.FC = () => {
                   ref={boxesRef[i]}
                   src="/images/ange_icon_small.png"
                   alt="アンジュのアイコン"
+                  key={`ange-icon-${i}`}
                 ></img>
               );
             }
