@@ -11,3 +11,14 @@ export interface ITimelineData {
 export interface TimeLineTemplateProps {
     datas: ITimelineData[],
 }
+
+export interface IHistoryData {
+    title: string;
+    content: string;
+    link?: string;
+    link_text?: string;
+}
+
+export interface HistoryTemplateProps {
+    datas: IHistoryData[]
+}

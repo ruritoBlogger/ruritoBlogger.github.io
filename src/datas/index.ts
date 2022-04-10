@@ -1,2 +1,3 @@
 import { TimelineDatas } from "./timeline"
-export { TimelineDatas }
+import { HistoryDatas } from "./history"
+export { TimelineDatas, HistoryDatas }
