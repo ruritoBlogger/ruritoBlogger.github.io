@@ -12,19 +12,20 @@
     "start": "next start"
   },
   "dependencies": {
-    "gsap": "^3.8.0",
-    "next": "^12.0.2",
-    "next-sitemap": "^1.6.192",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "sass": "^1.43.4"
+    "gsap": "^3.10.2",
+    "next": "^12.1.4",
+    "next-sitemap": "^2.5.19",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "sass": "^1.50.0"
   },
   "devDependencies": {
-    "@types/react": "^17.0.33",
-    "@types/react-dom": "^17.0.10",
-    "@types/react-router-dom": "^5.3.2",
-    "postcss": "^8.3.11",
-    "ts-node": "^10.4.0",
-    "typescript": "^4.4.4"
+    "@types/node": "^17.0.23",
+    "@types/react": "^18.0.1",
+    "@types/react-dom": "^18.0.0",
+    "@types/react-router-dom": "^5.3.3",
+    "postcss": "^8.4.12",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
   }
 }
