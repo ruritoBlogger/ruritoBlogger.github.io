@@ -1,15 +1,15 @@
 import { ReactNode, useEffect, useRef } from "react";
 
-import TextAnimation from "../textAnimation/index";
-import { CreateLoadingAnimation } from "../../animations/CreateLoadingAnimation";
-import { CreateDriftingAnimation } from "../../animations/CreateDriftingAnimation";
+import { TextAnimation } from "../";
+import { CreateLoadingAnimation } from "../../../animations/CreateLoadingAnimation";
+import { CreateDriftingAnimation } from "../../../animations/CreateDriftingAnimation";
 import styles from "./index.module.sass";
 
 interface Props {
   children: ReactNode;
 }
 
-const LoadingAnimation: React.FC<Props> = ({ children }) => {
+export const LoadingAnimation: React.FC<Props> = ({ children }) => {
   // FIXME: anyで握りつぶしちゃ＾〜う
   const windowRef: any = useRef(null);
   const imageRef: any = useRef(null);
@@ -76,5 +76,3 @@ const LoadingAnimation: React.FC<Props> = ({ children }) => {
     </div>
   );
 };
-
-export default LoadingAnimation;

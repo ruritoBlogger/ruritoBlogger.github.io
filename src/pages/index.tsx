@@ -4,7 +4,7 @@ import Skill from "./skill/index";
 import History from "./history/index";
 import Timeline from "./timeline/index";
 import Copyright from "../components/copyright/index";
-import LoadingAnimation from "../components/loadingAnimation/index";
+import { LoadingAnimation } from "../components/";
 
 const Home: React.FC = () => {
   return (
