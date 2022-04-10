@@ -7,16 +7,16 @@ export const ProfileTemplate: React.FC = () => {
         <h1 className={styles.title}>rurito0125</h1>
         <div className={styles.content_block}>
           <p className={styles.content}>立命館大学 情報理工学部 情報理工学科</p>
-          <p className={styles.content}>知能情報コース B4</p>
-          <p className={styles.content}>知能エンターテイメント研所属</p>
+          <p className={styles.content}>知能情報コース卒</p>
+          <p className={styles.content}>知能エンターテイメント研に所属していました</p>
         </div>
 
         <div className={styles.content_block}>
           <p className={styles.content}>
-            UbuntuとVimに侵食されたVSCodeをよく使います
+            Vimに侵食されたVSCodeをよく使います
           </p>
           <p className={styles.content}>にじさんじ(さんばか)が好きです</p>
-          <p className={styles.content}>最近は卒論に怯えながら生きてます</p>
+          <p className={styles.content}>就職したので趣味開発の時間が減ってしまいつらい</p>
         </div>
 
         <div className={styles.image_block}>
