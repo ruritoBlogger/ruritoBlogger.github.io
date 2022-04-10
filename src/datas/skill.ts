@@ -33,6 +33,7 @@ export const SkillDatas: ISkillData[] = [
           ReactやVue.js,
           Cycle.jsを用いたwebフロントエンドの開発などに使ってます.
           型パズルとかはよくわかんないです. JQueryは触ったことないです.
+          fp-tsやio-tsといった関数型記法をサポートするライブラリを最近触っています.
           IDEに型を教えてもらいながら生きてます.
         `,
     },
