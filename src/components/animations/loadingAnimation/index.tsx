@@ -1,8 +1,7 @@
 import { ReactNode, useEffect, useRef } from "react";
 
 import { TextAnimation } from "../";
-import { CreateLoadingAnimation } from "../../../animations/CreateLoadingAnimation";
-import { CreateDriftingAnimation } from "../../../animations/CreateDriftingAnimation";
+import { CreateLoadingAnimation, CreateDriftingAnimation } from "../../../animations";
 import styles from "./index.module.sass";
 
 interface Props {
