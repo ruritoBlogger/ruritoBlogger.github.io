@@ -1,10 +1,8 @@
 import styles from "./index.module.sass";
-import { useEffect, useRef } from "react";
-import { MutableRefObject } from "react";
+import { useEffect, useRef, MutableRefObject } from "react";
+import { CreateShakeAndUpAnimation } from "../../../animations";
 
-import { CreateShakeAndUpAnimation } from "../../animations";
-
-const Intro: React.FC = () => {
+export const IntroTemplate: React.FC = () => {
   const id = "navigator";
   let boxesRef: MutableRefObject<null>[] = [];
 
@@ -100,5 +98,3 @@ const Intro: React.FC = () => {
     </div>
   );
 };
-
-export default Intro;

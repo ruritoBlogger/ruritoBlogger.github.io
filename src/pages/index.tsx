@@ -1,18 +1,14 @@
-import Intro from "./intro/index";
-import Profile from "./profile/index";
-import Skill from "./skill/index";
-import History from "./history/index";
-import Timeline from "./timeline/index";
+import { IntroTemplate, ProfileTemplate, HistoryTemplate, SkillTemplate, TimelineTemplate } from "../templates"
 import { LoadingAnimation, Copyright } from "../components/";
 
 const Home: React.FC = () => {
   return (
     <LoadingAnimation>
-      <Intro />
-      <Profile />
-      <History />
-      <Skill />
-      <Timeline />
+      <IntroTemplate />
+      <ProfileTemplate />
+      <HistoryTemplate />
+      <SkillTemplate />
+      <TimelineTemplate />
       <Copyright />
     </LoadingAnimation>
   );
