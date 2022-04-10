@@ -1,5 +1,5 @@
 import styles from "./index.module.sass";
-import TimePoint from "../../components/timepoint/index";
+import { TimePoint } from "../../components/";
 
 interface DataProps {
   date: string;

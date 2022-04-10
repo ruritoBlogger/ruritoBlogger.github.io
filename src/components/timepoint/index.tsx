@@ -1,6 +1,6 @@
 import styles from "./index.module.sass";
 
-import Card from "../card/index";
+import { Card } from "../";
 
 interface Props {
   data: {
@@ -18,7 +18,7 @@ interface Props {
  * タイムラインで表示するカードやTimelineの導線をひとまとめにしたコンポーネント
  * @param data 表示するデータ
  */
-const TimePoint: React.FC<Props> = ({ data }) => {
+export const TimePoint: React.FC<Props> = ({ data }) => {
   return (
     <div className={styles.inner}>
       <div className={styles.dateWrapper}>
@@ -36,5 +36,3 @@ const TimePoint: React.FC<Props> = ({ data }) => {
     </div>
   );
 };
-
-export default TimePoint;
