@@ -1,6 +1,6 @@
 import { MutableRefObject, useEffect, useRef } from "react";
 
-import { CreateJumpAnimation } from "../../../animations/CreateJumpAnimation";
+import { CreateJumpAnimation } from "../../../animations";
 
 interface Props {
   message: string;

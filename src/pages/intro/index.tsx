@@ -2,7 +2,7 @@ import styles from "./index.module.sass";
 import { useEffect, useRef } from "react";
 import { MutableRefObject } from "react";
 
-import { CreateShakeAndUpAnimation } from "../../animations/CreateShakeAndUpAnimation";
+import { CreateShakeAndUpAnimation } from "../../animations";
 
 const Intro: React.FC = () => {
   const id = "navigator";
