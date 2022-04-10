@@ -1,3 +1,4 @@
 import { TimelineDatas } from "./timeline"
 import { HistoryDatas } from "./history"
-export { TimelineDatas, HistoryDatas }
+import { SkillDatas } from "./skill"
+export { TimelineDatas, HistoryDatas, SkillDatas }

@@ -1,6 +1,6 @@
 import { IntroTemplate, ProfileTemplate, HistoryTemplate, SkillTemplate, TimelineTemplate } from "../templates"
 import { LoadingAnimation, Copyright } from "../components/";
-import { TimelineDatas, HistoryDatas } from "../datas"
+import { TimelineDatas, HistoryDatas, SkillDatas } from "../datas"
 
 const Home: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ const Home: React.FC = () => {
       <IntroTemplate />
       <ProfileTemplate />
       <HistoryTemplate datas={HistoryDatas} />
-      <SkillTemplate />
+      <SkillTemplate datas={SkillDatas} />
       <TimelineTemplate datas={TimelineDatas} />
       <Copyright />
     </LoadingAnimation>
