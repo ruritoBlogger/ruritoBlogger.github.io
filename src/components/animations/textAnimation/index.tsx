@@ -1,6 +1,6 @@
 import { MutableRefObject, useEffect, useRef } from "react";
 
-import { CreateJumpAnimation } from "../../animations/CreateJumpAnimation";
+import { CreateJumpAnimation } from "../../../animations/CreateJumpAnimation";
 
 interface Props {
   message: string;
@@ -9,7 +9,7 @@ interface Props {
   style: string;
 }
 
-const TextAnimation: React.FC<Props> = ({ message, startTime, style }) => {
+export const TextAnimation: React.FC<Props> = ({ message, startTime, style }) => {
   let charsRef: MutableRefObject<null>[] = [];
   for (let i = 0; i < message.length; i++) {
     charsRef.push(useRef(null));
@@ -46,5 +46,3 @@ const TextAnimation: React.FC<Props> = ({ message, startTime, style }) => {
     </>
   );
 };
-
-export default TextAnimation;
