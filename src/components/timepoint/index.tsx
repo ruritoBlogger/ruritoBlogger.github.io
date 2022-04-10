@@ -20,7 +20,7 @@ interface Props {
  */
 export const TimePoint: React.FC<Props> = ({ data }) => {
   return (
-    <div className={styles.inner}>
+    <div className={styles.inner} key={data.title}>
       <div className={styles.dateWrapper}>
         <p className={styles.dateTitle}>{data.date}</p>
       </div>
