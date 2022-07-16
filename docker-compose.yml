@@ -5,6 +5,9 @@ services:
       context: .
     volumes:
       - ./:/app
+      - front_node_modules/:/app/node_modules
     command: yarn dev
     ports:
       - "3000:3000"
+volumes:
+  front_node_modules:
