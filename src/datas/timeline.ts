@@ -1,4 +1,4 @@
-import { ITimelineData } from "../templates/type"
+import { ITimelineData } from "@/src/templates/type"
 
 export const TimelineDatas: ITimelineData[] = [
     {

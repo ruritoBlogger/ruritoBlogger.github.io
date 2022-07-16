@@ -1,4 +1,4 @@
-import { ISkillData } from "../templates/type"
+import { ISkillData } from "@/src/templates/type"
 
 export const SkillDatas: ISkillData[] = [
     {

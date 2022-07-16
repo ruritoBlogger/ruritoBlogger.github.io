@@ -1,6 +1,6 @@
 import { IntroTemplate, ProfileTemplate, HistoryTemplate, SkillTemplate, TimelineTemplate } from "../templates"
-import { LoadingAnimation, Copyright } from "../components/";
-import { TimelineDatas, HistoryDatas, SkillDatas } from "../datas"
+import { LoadingAnimation, Copyright } from "@/src/components/";
+import { TimelineDatas, HistoryDatas, SkillDatas } from "@/src/datas"
 
 const Home: React.FC = () => {
   return (

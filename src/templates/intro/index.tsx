@@ -1,6 +1,6 @@
 import styles from "./index.module.sass";
 import { useEffect, useRef, MutableRefObject } from "react";
-import { CreateShakeAndUpAnimation } from "../../animations";
+import { CreateShakeAndUpAnimation } from "@/src/animations";
 
 export const IntroTemplate: React.FC = () => {
   const id = "navigator";

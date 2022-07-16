@@ -1,4 +1,4 @@
-import { IHistoryData } from "../templates/type"
+import { IHistoryData } from "@/src/templates/type"
 
 export const HistoryDatas: IHistoryData[] = [
     {
