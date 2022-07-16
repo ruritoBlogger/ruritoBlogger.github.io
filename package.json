@@ -22,7 +22,7 @@
   "devDependencies": {
     "@types/node": "^18.0.4",
     "@types/react": "18.0.15",
-    "@types/react-dom": "16.9.13",
+    "@types/react-dom": "16.9.16",
     "@types/react-router-dom": "5.1.7",
     "postcss": "8.3.0",
     "ts-node": "9.1.1",
