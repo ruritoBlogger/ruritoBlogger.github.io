@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export && next-sitemap",
+    "build:analyze": "ANALYZE=true next build",
     "start": "next start"
   },
   "dependencies": {
