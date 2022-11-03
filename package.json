@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build && next export && next-sitemap",
     "build:analyze": "ANALYZE=true next build",
     "start": "next start"
