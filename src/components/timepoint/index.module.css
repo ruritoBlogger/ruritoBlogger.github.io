@@ -1,0 +1,161 @@
+.inner {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .inner {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.title {
+  color: #515151;
+  font-size: 2.5vw;
+  text-align: center;
+}
+@media screen and (min-width: 764px) and (max-width: 1024px) {
+  .title {
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 764px) {
+  .title {
+    font-size: 10vw;
+  }
+}
+
+.subtitle, .dateTitle {
+  color: #515151;
+  font-size: 1.5vw;
+  text-align: center;
+}
+@media screen and (min-width: 764px) and (max-width: 1024px) {
+  .subtitle, .dateTitle {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 764px) {
+  .subtitle, .dateTitle {
+    font-size: 6vw;
+  }
+}
+
+.content {
+  color: #515151;
+  font-size: 1vw;
+  text-align: center;
+  margin: 1% 0;
+}
+@media screen and (min-width: 764px) and (max-width: 1024px) {
+  .content {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 764px) {
+  .content {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .disabledWhenSmartphone {
+    display: none;
+  }
+}
+/* overwrite area */
+.inner {
+  width: 80%;
+  margin: auto;
+  color: #515151;
+}
+.inner:focus-within {
+  color: #ffd977;
+}
+@media screen and (max-width: 764px) {
+  .inner {
+    width: 98%;
+  }
+}
+
+.subtitle, .dateTitle {
+  text-align: left;
+  padding-left: 10%;
+}
+
+/* overwrite area */
+.dateWrapper {
+  min-width: 100px;
+  max-width: 300px;
+  width: 15%;
+  position: relative;
+}
+@media screen and (max-width: 764px) {
+  .dateWrapper {
+    display: none;
+  }
+}
+
+.dateSmartphoneWrapper {
+  margin-bottom: 6%;
+}
+@media screen and (min-width: 764px) {
+  .dateSmartphoneWrapper {
+    display: none;
+  }
+}
+
+.dateTitle {
+  color: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+}
+
+.lineBlock {
+  width: 10%;
+  text-align: center;
+  position: relative;
+}
+
+.line {
+  height: 50%;
+  width: 4px;
+  margin: auto;
+  background-color: #515151;
+}
+
+.ellipse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #515151;
+}
+.ellipse:focus {
+  background-color: #ffd977;
+  outline: none;
+}
+@media screen and (max-width: 764px) {
+  .ellipse {
+    width: 20px;
+    height: 20px;
+    top: 55%;
+  }
+}
+
+.cardWrapper {
+  margin: 2%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+}/*# sourceMappingURL=index.module.css.map */

@@ -1,0 +1,151 @@
+.inner {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .inner {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.title {
+  color: #515151;
+  font-size: 2.5vw;
+  text-align: center;
+}
+@media screen and (min-width: 764px) and (max-width: 1024px) {
+  .title {
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 764px) {
+  .title {
+    font-size: 10vw;
+  }
+}
+
+.subtitle {
+  color: #515151;
+  font-size: 1.5vw;
+  text-align: center;
+}
+@media screen and (min-width: 764px) and (max-width: 1024px) {
+  .subtitle {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 764px) {
+  .subtitle {
+    font-size: 6vw;
+  }
+}
+
+.content {
+  color: #515151;
+  font-size: 1vw;
+  text-align: center;
+  margin: 1% 0;
+}
+@media screen and (min-width: 764px) and (max-width: 1024px) {
+  .content {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 764px) {
+  .content {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .disabledWhenSmartphone {
+    display: none;
+  }
+}
+/* overwrite area */
+.inner {
+  flex-direction: row;
+  width: 60%;
+  margin: 0 20%;
+}
+@media screen and (min-width: 764px) and (max-width: 1024px) {
+  .inner {
+    width: 80%;
+    margin: 0 10%;
+  }
+}
+@media screen and (max-width: 764px) {
+  .inner {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* overwrite area */
+.box {
+  width: 40%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 764px) {
+  .box {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.content_block {
+  margin: 10% 0;
+}
+
+.image_block {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.twitter_img, .github_img {
+  max-width: 80px;
+  max-height: 80px;
+  width: 5vw;
+  height: 5vw;
+}
+.twitter_img:hover, .github_img:hover {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  transform: translateY(-4px);
+  transition-duration: 0.5s;
+}
+@media screen and (max-width: 764px) {
+  .twitter_img, .github_img {
+    width: 20vw;
+    height: 20vw;
+  }
+}
+
+.twitter_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.github_img {
+  border-radius: 50%;
+}
+
+.profile_img {
+  margin-top: 15%;
+  margin-bottom: 10%;
+  min-height: 200px;
+  min-width: 200px;
+  height: 20vw;
+  width: 20vw;
+}/*# sourceMappingURL=index.module.css.map */
