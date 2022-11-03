@@ -53,16 +53,29 @@
     /* 試験的なオプション */
     // "experimentalDecorators": true,         /* ES7 デコレーター用の実験的なサポートを有効にします。 */
     // "emitDecoratorMetadata": true,          /* デコレーター用の型メタデータを発行するための実験的なサポートを有効にします。 */
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "baseUrl": ".",
     "paths": {
-      "@/src/*": ["src/*"],
-    }
+      "@/src/*": [
+        "src/*"
+      ]
+    },
+    "incremental": true
   },
-  "include": ["src"],
-  "files": ["next-env.d.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "src"
+  ],
+  "files": [
+    "next-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
