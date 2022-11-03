@@ -1,4 +1,4 @@
-import styles from "./index.module.sass";
+import styles from "./index.module.css";
 import { TimePoint } from "@/src/components";
 import { TimeLineTemplateProps } from "../type"
 

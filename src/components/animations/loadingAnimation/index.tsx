@@ -2,7 +2,7 @@ import { ReactNode, useEffect, useRef } from "react";
 
 import { TextAnimation } from "@/src/components/animations";
 import { CreateLoadingAnimation, CreateDriftingAnimation } from "@/src/animations";
-import styles from "./index.module.sass";
+import styles from "./index.module.css";
 
 interface Props {
   children: ReactNode;

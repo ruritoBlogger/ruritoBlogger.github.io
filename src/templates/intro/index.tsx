@@ -1,4 +1,4 @@
-import styles from "./index.module.sass";
+import styles from "./index.module.css";
 import { useEffect, useRef, MutableRefObject } from "react";
 import { CreateShakeAndUpAnimation } from "@/src/animations";
 

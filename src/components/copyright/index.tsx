@@ -1,4 +1,4 @@
-import styles from "./index.module.sass";
+import styles from "./index.module.css";
 
 export const Copyright: React.FC = () => {
   return (

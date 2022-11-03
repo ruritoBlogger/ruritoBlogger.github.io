@@ -1,4 +1,4 @@
-import styles from "./index.module.sass";
+import styles from "./index.module.css";
 import { HistoryTemplateProps } from "../type"
 
 export const HistoryTemplate: React.FC<HistoryTemplateProps> = ({ datas }) => {

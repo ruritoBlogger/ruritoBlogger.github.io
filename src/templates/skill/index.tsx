@@ -1,4 +1,4 @@
-import styles from "./index.module.sass";
+import styles from "./index.module.css";
 import { SkillTemplateProps } from "../type"
 
 export const SkillTemplate: React.FC<SkillTemplateProps> = ({ datas }) => {
