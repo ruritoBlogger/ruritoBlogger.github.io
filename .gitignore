@@ -6,3 +6,6 @@ cache
 
 # NOTE: gitで管理するメリットがないので除外
 .idea
+
+# NOTE: sass -> cssに変換する際のmapファイルは除外
+*.css.map
