@@ -16,7 +16,7 @@
     "eslint-config-next": "^13.0.0",
     "gsap": "^3.7.1",
     "next": "^13.0.0",
-    "next-sitemap": "^1.6.99",
+    "next-sitemap": "^3.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.34.0"
