@@ -16,6 +16,9 @@ resource "vercel_deployment" "portfolio" {
     files       = data.vercel_project_directory.portfolio.files
     path_prefix = "../frontend"
     production  = true
+    project_settings = {
+      root_directory = "../frontend"
+    }
 }
 
 resource "vercel_project" "portfolio" {
