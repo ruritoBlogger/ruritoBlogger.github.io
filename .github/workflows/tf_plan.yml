@@ -1,0 +1,76 @@
+name: called terraform plan workflow
+"on": pull_request
+
+env:
+  TF_VERSION: 1.3.9
+  TF_WOKR_DIR: infra
+
+jobs:
+  tf_plan:
+    runs-on: ubuntu-18.04
+    permissions:
+      id-token: write
+      contents: read
+      pull-requests: write
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2.1.0
+
+      - name: setup terraform
+        uses: hashicorp/setup-terraform@v1.3.2
+        with:
+          terraform_version: ${{ TF_VERSION }}
+
+      - name: terraform init
+        id: init
+        working-directory: ${{ TF_WORK_DIR }}
+        run: |
+          terraform init
+
+      - name: terraform plan
+        id: plan
+        working-directory: ${{ TF_WORK_DIR }}
+        run: |
+          terraform plan -no-color
+
+      # 1. PRのコメント欄に65536文字数制限がある
+      # 2. github-script もしくは GitHub Actions Workflow 内にも文字数制限がある
+      # よって、terraform plan/apply の結果を予め削る必要がある
+      # 大量に差分が出た場合は差分を見るのではなく plan/apply の成否を見たい
+      # これらを考慮して65000文字に制限する
+      # url: https://lab.mo-t.com/blog/terraform-github-actions
+      - name: truncate terraform plan result
+        run: |
+          plan=$(cat <<'EOF'
+          ${{ format('{0}{1}', steps.plan.outputs.stdout, steps.plan.outputs.stderr) }}
+          EOF
+          )
+          echo "PLAN<<EOF" >> $GITHUB_ENV
+          echo "${plan}" | grep -v 'Refreshing state' | tail -c 65000 >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
+      - name: create comment from plan result
+        uses: actions/github-script@0.9.0
+        if: github.event_name == 'pull_request'
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const output = `#### Terraform Initialization ⚙️\`${{ steps.init.outcome }}\`
+            #### Terraform Plan 📖\`${{ steps.plan.outcome }}\`
+            
+            <details><summary>Show Plan</summary>
+            
+            \`\`\`\n
+            ${ process.env.PLAN }
+            \`\`\`
+            
+            </details>
+            
+            *Pusher: @${{ github.actor }}, Action: \`${{ github.event_name }}\`, Working Directory: \`${{ inputs.TF_WORK_DIR }}\`, Workflow: \`${{ github.workflow }}\`*`;
+
+            github.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: output
+            })
