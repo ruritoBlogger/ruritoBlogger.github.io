@@ -6,3 +6,23 @@ terraform {
     }
   }
 }
+
+data "vercel_project_directory" "eportfolio_dir" {
+  path = "../frontend"
+}
+
+resource "vercel_deployment" "portfolio" {
+    project_id  = vercel_project.portfolio.id
+    files       = data.vercel_project_directory.eportfolio_dir.files
+    path_prefix = "../frontend"
+    production  = true
+}
+
+resource "vercel_project" "portfolio" {
+    name      = "portfolio"
+    framework = "nextjs"
+    git_repository = {
+      type = "github"
+      repo = "ruritoBlogger/ruritoBlogger.github.io"
+    }
+}
