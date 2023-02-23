@@ -30,7 +30,7 @@ jobs:
         id: plan
         working-directory: ./infra
         run: |
-          terraform plan -no-color
+          TF_VAR_vercel_api_token=${{ secrets.VERCEL_API_TOKEN }} terraform plan -no-color
 
       # 1. PRのコメント欄に65536文字数制限がある
       # 2. github-script もしくは GitHub Actions Workflow 内にも文字数制限がある

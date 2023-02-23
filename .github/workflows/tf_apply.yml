@@ -29,7 +29,7 @@ jobs:
         id: apply
         working-directory: ./infra
         run: |
-          terraform apply -auto-approve -no-color
+          TF_VAR_vercel_api_token=${{ secrets.VERCEL_API_TOKEN }} terraform apply -auto-approve -no-color
 
       # 1. PRのコメント欄に65536文字数制限がある
       # 2. github-script もしくは GitHub Actions Workflow 内にも文字数制限がある
