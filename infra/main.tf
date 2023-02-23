@@ -7,13 +7,13 @@ terraform {
   }
 }
 
-data "vercel_project_directory" "eportfolio_dir" {
+data "vercel_project_directory" "portfolio" {
   path = "../frontend"
 }
 
 resource "vercel_deployment" "portfolio" {
     project_id  = vercel_project.portfolio.id
-    files       = data.vercel_project_directory.eportfolio_dir.files
+    files       = data.vercel_project_directory.portfolio.files
     path_prefix = "../frontend"
     production  = true
 }
