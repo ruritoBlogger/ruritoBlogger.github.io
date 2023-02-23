@@ -1,5 +1,5 @@
 name: called terraform apply workflow
-"on":
+on:
   push:
     branches:
       - master
@@ -22,16 +22,16 @@ jobs:
       - name: setup terraform
         uses: hashicorp/setup-terraform@v1.3.2
         with:
-          terraform_version: ${{ TF_VERSION }}
+          terraform_version: ${{ env.TF_VERSION }}
 
       - name: terraform init
-        working-directory: ${{ TF_WORK_DIR }}
+        working-directory: ${{ env.TF_WORK_DIR }}
         run: |
           terraform init
 
       - name: terraform apply
         id: apply
-        working-directory: ${{ TF_WORK_DIR }}
+        working-directory: ${{ env.TF_WORK_DIR }}
         run: |
           terraform apply -auto-approve -no-color
 
