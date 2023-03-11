@@ -30,8 +30,10 @@ $ yarn dev
 
 ## 技術スタック
 
-Docker + Next.js(SSG) + TypeScript + Firebase を使いました
+Docker + Next.js(SSG) + TypeScript を使いました
 
 css modules で書いてます.
 
-test コードとかは書いてないです. storybook も使ってません.
+インフラ環境は terraform を用いて構築しています
+
+コードのデプロイなどは GitHub Actions を使っています
